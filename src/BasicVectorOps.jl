@@ -4,5 +4,7 @@ module BasicVectorOps
 include("magnitude.jl")
 
 export vectorMag
+export vectorDot
+export findAngle
 
 end
