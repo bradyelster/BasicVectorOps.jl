@@ -15,9 +15,9 @@ vectorDot(v::Vector, w::Vector)::Float64 = Float64(v' * w)
 ### findAngle
 `findAngle` finds the angle between the vector and the positive x-axis. 
 Output angle can be in either radians or degrees, specified 
-by the Boolean `degMode`` and is rounded to the nearest decimal.
+by the Boolean `degMode` and is rounded to the nearest decimal.
 """
-function findAngle(v::Vector, degMode = false)
+function findAngle(v::Vector, degMode::Bool = false)
     return length(v) < 2 ? error("Input vector must be 2-dimensional") :
         degMode ? round(atand(v[2], v[1]), digits = 1) :
         round(atan(v[2], v[1]), digits = 1)
