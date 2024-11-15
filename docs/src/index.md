@@ -11,4 +11,5 @@ Documentation for [BasicVectorOps](https://github.com/bradyelster/BasicVectorOps
 
 ```@autodocs
 Modules = [BasicVectorOps]
+Private = false
 ```
