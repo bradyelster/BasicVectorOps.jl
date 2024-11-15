@@ -1,20 +1,17 @@
-@doc
-"""
+@doc """
 ### vectorMag
 `vectorMag` compute the magnitude of a given input vector.
 """
 vectorMag(v::Vector) = (sqrt ∘ sum)(v .^ 2)
 
-@doc
-"""
+@doc """
 ### vectorDot 
 `vectorDot` computes the dot product between two input vectors.
 """
 vectorDot(v::Vector, w::Vector)::Float64 = Float64(v' * w)
 
 
-@doc
-"""
+@doc """
 ### findAngle
 `findAngle` finds the angle between the vector and the positive x-axis. 
 Output angle can be in either radians or degrees, specified 
